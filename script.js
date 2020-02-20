@@ -1,5 +1,4 @@
 function fill(Value) {
-   //Assigning value to "search" div in "search.php" file.
    $('#search').val(Value);
    //Hiding "display" div in "search.php" file.
    $('#display').hide();
