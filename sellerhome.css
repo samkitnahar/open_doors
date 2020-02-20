@@ -1,0 +1,279 @@
+*
+{
+    padding:0%;
+    margin:0%;
+}
+body
+{
+    background-color:lightgray; 
+}
+.navbar
+{
+    width:100%;
+    overflow:hidden;
+    background-color:black;
+    height:45px;
+}
+.c1 a
+{
+    float: right;
+    text-align: center;
+    padding: 13px;
+    padding-right:13px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.c1 .dropdownbtn
+{
+    float: right;
+    text-align: center;
+    padding: 13px;
+    padding-right:13px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    background-color:black;
+    border:none;
+    cursor: pointer;
+}
+.mobile-container 
+{
+    margin: auto;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.navbar #myLinks
+{
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.logo a img
+{
+    height:40px;
+    width:60px;
+    float:left;
+    padding-top:1px;
+}
+.search input[type=text] 
+{
+    float:left;
+    padding:7px;
+    border:none;
+    margin-right:16px;
+    margin-top:5px;
+    font-size:15px;
+    margin-left:10px;
+    width:250px;
+    border-radius:5px;
+}
+.search button 
+{
+    float: left;
+    width: 30px;
+    padding: 5px;
+    background: black;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #2929a3;
+    cursor: pointer;
+    margin-top:9px;
+}
+ li {
+    float: right;
+  }
+  
+ .dropdown li a,.dropdownbtn{
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropdownbtn {
+    background-color:#C91212;
+  }
+  
+  li.dropdown {
+    display: block;
+  }
+  
+  .dropdown-content
+  {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width:145px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top:40px;
+    opacity:0.6;
+    margin-top:43px;
+}
+.dropdown-content1
+{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width:180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top:40px;
+  opacity:0.6;
+  margin-top:43px;
+}
+.dropdown-content2
+  {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width:130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top:40px;
+    opacity:0.6;
+    margin-top:43px;
+}
+ 
+  .dropdown-content a,.dropdown-content1 a,.dropdown-content2 a {
+    color: black;
+    padding: 10px 11px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border:1px solid black;
+    border-top:none;
+  }
+  .dropdown-content button{
+    color: black;
+    padding: 10px 11px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border:1px solid black;
+    border-top:none;
+    cursor:pointer;
+  }
+  .dropdown-content a:hover,.dropdown-content1 a:hover ,.dropdown-content2 a:hover  {background-color: #f1f1f1;}
+  .dropdown-content button:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+  }
+  .dropdown:hover .dropdown-content1 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+  }
+  .dropdown:hover .dropdown-content2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+  }
+
+.glass{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background-color: rgba(20, 20, 20, 0.75);
+}
+ .form-popup {
+  display: none;
+  position: fixed;
+  bottom:120px;
+  left:500px;
+  border:1px solid black;
+  z-index: 9; 
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 400px;
+  height:110%;
+  padding: 10px;
+  background: linear-gradient(0deg, rgba(179,180,180,1) 37%, rgba(252,251,251,1) 100%);
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 60%;
+  padding: 15px;
+  margin-left:38px;
+  height:30px;
+  border-radius:4px;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding-bottom:7px;
+  text-align:center;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  height:40px;
+  margin-bottom:10px;
+  opacity: 0.8;
+    margin-left:80px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.show1
+{
+    margin-left:133px;
+    margin-top:-20px;
+    font-size:12px;
+}
+.new
+{
+    margin-left:160px;
+    font-size:15px;
+}
+.register
+{
+    font-size:20px;
+    font-family:Baskerville Old Face,cursive;
+    margin-left:140px;
+    margin-top:-27px;
+}
+.or
+{
+    font-size:15px;
+    margin-left:190px;
+    margin-top:-17px;
+}
+.login_with
+{
+    font-size:15px;
+    margin-left:155px;
+    margin-top:-20px;
+}
+.desc
+{
+    width:30%;
+    height:100%;
+    background-color:black;
+    opacity:0.9;
+    border:3px solid white;
+    
+}

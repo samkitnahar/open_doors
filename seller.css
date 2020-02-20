@@ -1,0 +1,544 @@
+*
+{
+    padding:0%;
+    margin:0%;
+}
+body
+{
+    background-color:#FCFCFF; 
+}
+.navbar
+{
+    width:100%;
+    overflow:hidden;
+    background-color:black;
+    height:45px;
+}
+.c1 a
+{
+    float: right;
+    text-align: center;
+    padding: 13px;
+    padding-right:13px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.c1 .dropdownbtn
+{
+    float: right;
+    text-align: center;
+    padding: 13px;
+    padding-right:13px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    background-color:black;
+    border:none;
+    cursor: pointer;
+}
+.mobile-container 
+{
+    margin: auto;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.navbar #myLinks
+{
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.logo a img
+{
+    height:40px;
+    width:60px;
+    float:left;
+    padding-top:1px;
+}
+.search input[type=text] 
+{
+    float:left;
+    padding:7px;
+    border:none;
+    margin-right:16px;
+    margin-top:5px;
+    font-size:15px;
+    margin-left:10px;
+    width:250px;
+    border-radius:5px;
+}
+.search button 
+{
+    float: left;
+    width: 30px;
+    padding: 5px;
+    background: black;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #2929a3;
+    cursor: pointer;
+    margin-top:9px;
+}
+li {
+    float: right;
+  }
+  
+ .dropdown li a,.dropdownbtn{
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropdownbtn {
+    background-color:#C91212;
+  }
+  
+  li.dropdown {
+    display: block;
+  }
+  
+  .dropdown-content
+  {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width:145px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top:40px;
+    opacity:0.6;
+    margin-top:43px;
+}
+.dropdown-content1
+{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width:180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top:40px;
+  opacity:0.6;
+  margin-top:43px;
+}
+.dropdown-content2
+  {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width:130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top:40px;
+    opacity:0.6;
+    margin-top:43px;
+}
+ 
+  .dropdown-content a,.dropdown-content1 a,.dropdown-content2 a {
+    color: black;
+    padding: 10px 11px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border:1px solid black;
+    border-top:none;
+  }
+  .dropdown-content button{
+    color: black;
+    padding: 10px 11px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border:1px solid black;
+    border-top:none;
+    cursor:pointer;
+  }
+  .dropdown-content a:hover,.dropdown-content1 a:hover ,.dropdown-content2 a:hover  {background-color: #f1f1f1;}
+  .dropdown-content button:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+  }
+  .dropdown:hover .dropdown-content1 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+  }
+  .dropdown:hover .dropdown-content2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+  }
+
+.glass{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background-color: rgba(20, 20, 20, 0.75);
+}
+ .form-popup {
+  display: none;
+  position: fixed;
+  bottom:120px;
+  left:500px;
+  border:1px solid black;
+  z-index: 9; 
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 400px;
+  height:110%;
+  padding: 10px;
+  background: linear-gradient(0deg, rgba(179,180,180,1) 37%, rgba(252,251,251,1) 100%);
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 60%;
+  padding: 15px;
+  margin-left:38px;
+  height:30px;
+  border-radius:4px;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding-bottom:7px;
+  text-align:center;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  height:40px;
+  margin-bottom:10px;
+  opacity: 0.8;
+    margin-left:80px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.show1
+{
+    margin-left:133px;
+    margin-top:-20px;
+    font-size:12px;
+}
+.new
+{
+    margin-left:160px;
+    font-size:15px;
+}
+.register
+{
+    font-size:20px;
+    font-family:Baskerville Old Face,cursive;
+    margin-left:140px;
+    margin-top:-27px;
+}
+.or
+{
+    font-size:15px;
+    margin-left:190px;
+    margin-top:-17px;
+}
+.login_with
+{
+    font-size:15px;
+    margin-left:155px;
+    margin-top:-20px;
+}
+.class1
+{
+    background-color:#5F9EA0;
+}
+.tabordion {
+  color: white;
+  display: block;
+  font-family: arial, sans-serif;
+  margin: auto;
+  position: relative;
+  width: 80%;
+  margin-left:0px;
+    height:100%;
+    margin-top:0px;
+}
+
+.tabordion input[name="sections"] {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
+.tabordion section {
+  display: block;
+}
+
+.tabordion section label {
+  background:#434A54;
+  border:1px solid #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 30px 20px;
+  position: relative;
+  width: 300px;
+  z-index:100;
+  height:100px;
+  text-align:center;
+}
+
+.tabordion section article {
+  display: none;
+  left: 330px;
+  min-width: 250px;
+  padding: 0 0 0 21px;
+  position: absolute;  
+  top: 0;
+    color:black;
+}
+
+.tabordion section article:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  left:-229px;
+  position: absolute;
+  top: 0;
+  width: 220px;
+  z-index:1;
+}
+
+.tabordion input[name="sections"]:checked + label { 
+  background: #59CDB5;
+  color: black;
+}
+
+.tabordion input[name="sections"]:checked ~ article {
+  display: block;
+}
+
+
+@media (max-width: 533px) {
+  
+  h1 {
+    width: 100%;
+  }
+
+  .tabordion {
+    width: 100%;
+  }
+  
+  .tabordion section label {
+    font-size: 1em;
+    width: 160px;
+  }  
+
+ .tabordion section article {
+    left: 200px;
+    min-width: 270px;
+  } 
+  
+  .tabordion section article:after {
+    background-color: #ccc;
+    bottom: 0;
+    content: "";
+    display: block;
+    left:-199px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+
+  }  
+  
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    width: 96%;
+  }
+
+  .tabordion {
+    width: 96%;
+  }
+}
+
+
+@media (min-width: 1366px) {
+  h1 {
+    width: 70%;
+  }
+
+  .tabordion {
+    width: 70%;
+  }
+}
+
+.btn2
+{
+    width:110px;
+    background-color:transparent;
+    outline:none;
+    border:none;
+    margin-left:17px;
+}
+.build
+{
+    margin-top:-11px;
+    border:1px solid black;
+    width:100%;
+    height:140px;
+}
+.btn3
+{
+    background-color:transparent;
+    outline:none;
+    border:none;
+}
+
+#myForm1
+{
+    display:none;
+}
+#myForm2
+{
+    display:none;
+}
+#showdetails
+{
+    display:none;
+}
+#typeshow
+{
+    display:none;
+}
+#typeshow1
+{
+    display:none;
+}
+#typeshow2
+{
+    display:none;
+}
+#typeshow3
+{
+    display:none;
+}
+.loc
+{
+    margin-left:610px;
+    background-color:transparent;
+    outline:none;
+    border:none;
+    margin-top:-22px;
+}
+.detail
+{
+    width:200px;
+    margin-top:50px;
+    height:30px;
+}
+#formdetail
+{
+    display:none;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 320px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  height:170px;
+}
+
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+#openprice
+{
+    display:none;
+    background-color:#C6C6CA;
+    border-radius:3px;
+    width:820px;
+    height:170px;
+    margin-top:10px;
+}
+#openrent
+{
+    display:none;
+    background-color:#C6C6CA;
+    border-radius:3px;
+    width:820px;
+    height:170px;
+    margin-top:10px;
+}
+#formcontact
+{
+    display:none;
+}
+
+#myForm
+{
+    background-image:url(https://www.novacorpproperties.com/ckfinder/userfiles/images/index-icon-2.png);
+    background-size:200px 200px;
+    width:200px;
+    height:200px;
+    border-radius:98px;
+}
+.amenities
+{
+    margin-top:10px;
+    height:150px;
+    width:700px;
+    border:1px solid black;
+}
