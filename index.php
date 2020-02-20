@@ -24,7 +24,7 @@
             <i class="fa fa-bars"></i>
             </a>
         <ul id="myLinks">
-            <button class="dropdownbtn" onclick="openForm()" id="f1"><?php if(isset($_SESSION))
+            <button class="dropdownbtn" onclick="openForm()" id="f1"><?php session_start() if(isset($_SESSION))
                                               { 
                                             echo  $_SESSION['user'];    
                                                     }
